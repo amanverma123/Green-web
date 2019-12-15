@@ -1,0 +1,254 @@
+.green-trees-initiative {
+    display: flex;
+    align-items: center;
+    font: Bold 1.375rem/1.75rem Helvetica;
+    color: #354463;
+    width: 20%;
+}
+
+.donate-today {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    padding-left: 5%;
+
+}
+
+.header-link {
+    font: Light 1rem/1.5rem Helvetica;
+    color: #354463;
+}
+
+.header {
+    height: 15vh;
+}
+
+.header-wrapper {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    margin-bottom: 3%;
+    justify-content: space-between;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+.donate-button {
+    font: Bold 1.125rem/1.375rem Helvetica;
+    color: #354463;
+    background: #C1F7D5 0% 0% no-repeat padding-box;
+    border-radius: 6.25rem;
+}
+
+.background-picture {
+    background-image: url(/images/background_picture.png);
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-container {
+    position: relative;
+    display: flex;
+    background-color: white;
+    width: 27%;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    font: Bold 1.5em/1.5em Helvetica;
+    width: 100%;
+
+}
+
+.card-link {
+
+    padding-top: 10%;
+    width: 100%;
+}
+
+.link-name {
+    color: #354463;
+    font: Lighter 0.7em/2em Helvetica;
+
+}
+
+.sub-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 20%;
+}
+
+.footer {
+    position: relative;
+    background: #C1F7D5 0% 0% no-repeat padding-box;
+}
+
+.take-action-issue {
+    position: absolute;
+    top: -1em;
+    padding-left: 1.6%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-right: 1.6%;
+    left: 40%;
+    color: white;
+    background: #354463 0% 0% no-repeat padding-box;
+}
+
+h1 {
+    font: Bold 1.25rem/2.25rem Helvetica;
+    color: #354463;
+}
+
+p {
+    font: Lighter 0.625rem/1.5rem Helvetica;
+    color: #354463;
+    width: 65%;
+}
+
+.footer-same-property {
+    width: 40%;
+}
+
+.wrap-footer {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: row;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+@media screen and (max-width:900px) {
+    .header {
+        height: 20vh;
+    }
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .header-links {
+        order: 3;
+        padding-top: 3%;
+        justify-content: space-between;
+    }
+
+    .green-trees-initiative {
+        width: 30%;
+    }
+
+    .donate-today {
+        width: 40%;
+        justify-content: flex-end;
+    }
+
+    .sub-body {
+        padding-top: 0%;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .stop-climate {
+        padding-bottom: 10%;
+        padding-top: 5%;
+        width: 60%;
+    }
+
+    .card-container {
+        width: 100%;
+        padding-bottom: 5%;
+    }
+
+    .card {
+        font: Bold 2em/1.5em Helvetica;
+    }
+
+    .background-picture {
+        background-image: url(/images/tablet_background.png);
+        height: 35rem;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .wrap-footer {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header-wrapper {
+        display: flex;
+        height: 30vh;
+        justify-content: space-between;
+    }
+
+    .header-links {
+        order: 2;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 31%;
+    }
+
+    .donate-today {
+        order: 3;
+        padding-left: 0%;
+        width: 100%;
+    }
+
+    .donate-button {
+        align-self: flex-start;
+        width: 100%;
+
+    }
+
+    .stop-climate {
+        padding-bottom: 10%;
+        padding-top: 5%;
+        width: 80%;
+    }
+
+    .background-picture {
+        background-image: url(/images/mobile_background.png);
+        height: 35rem;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .sub-body {
+        padding-top: 10%;
+    }
+
+    .header {
+        height: 30vh;
+    }
+
+    .card {
+        font: Bold 1.5em/1.5em Helvetica;
+    }
+
+}
