@@ -1,7 +1,7 @@
 .green-trees-initiative {
     display: flex;
     align-items: center;
-    font: Bold 1.2rem/1.75rem Helvetica;
+    font: Bold 1.375rem/1.75rem Helvetica;
     color: #354463;
     width: 25%;
 }
@@ -10,17 +10,36 @@
     display: flex;
     align-items: center;
     width: 25%;
-    padding-left: 5%;
-
+    justify-content: flex-end;
+}
+.postion-the-issue{
+    position: absolute;
+    top: -1rem;
+}
+.postion-take-action{
+    position: absolute;
+    top: -1rem;
+    left:45%
 }
 
+
 .header-link {
-    font: Light 1rem/1.5rem Helvetica;
+    font: Lighter 1rem/1.5rem Helvetica;
     color: #354463;
 }
 
 .header {
     height: 15vh;
+}
+.color-font{
+    background: #354463 0% 0% no-repeat padding-box;
+    font: 0.875rem Helvetica;
+    color: #FFFFFF;
+}
+.take-action-issue{
+    width: 10rem;
+    padding: 0.5rem;
+    text-align: center;
 }
 
 .header-wrapper {
@@ -45,9 +64,15 @@
     color: #354463;
     background: #C1F7D5 0% 0% no-repeat padding-box;
     border-radius: 6.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    border: 0rem;
 }
 
 .background-picture {
+    position: relative;
     background-image: url(/assets/images/background_picture.png);
     height: 40rem;
     background-size: cover;
@@ -58,30 +83,29 @@
     position: relative;
     display: flex;
     background-color: white;
-    width: 25%;
+    width: 45%;
     padding-top: 5%;
-    padding-bottom: 15%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .card {
-    font: Bold 1.5em/1.5em Helvetica;
+    font: Bold 2.75em Helvetica;
     width: 100%;
+    padding-top: 2rem;
 
 }
 
-.card-link {
-
-    padding-top: 10%;
-    width: 100%;
+.card-link{
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .link-name {
     color: #354463;
-    font: Lighter 0.7em/2em Helvetica;
+    font: Lighter 1rem Helvetica;
 
 }
 
@@ -89,9 +113,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
     padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 20%;
 }
 
 .footer {
@@ -99,35 +124,18 @@
     background: #C1F7D5 0% 0% no-repeat padding-box;
 }
 
-.position-center {
-    text-align: center;
-}
-
-.take-action-issue {
-    width: 98%;
-    position: absolute;
-    top: -1em;
-    color: white;
-}
-
-.take-action-issue a {
-    background: #354463 0% 0% no-repeat padding-box;
-    padding: .5rem 1rem;
-}
-
-h1 {
+.footer-item.h1 {
     font: Bold 1.25rem/2.25rem Helvetica;
     color: #354463;
 }
 
-p {
+.footer-item.p {
     font: Lighter 0.625rem/1.5rem Helvetica;
     color: #354463;
-    width: 65%;
 }
 
-.footer-same-property {
-    width: 30%;
+.footer-item {
+    width: 22%;
 }
 
 .wrap-footer {
@@ -145,14 +153,12 @@ p {
 
 
 @media screen and (max-width:950px) {
-    .footer-same-property {
+    .footer-item {
         width: 40%;
     }
 
     .green-trees-initiative {
         width: 20%;
-
-
     }
 
     .header {
@@ -189,7 +195,7 @@ p {
     }
 
     .stop-climate {
-        padding-bottom: 10%;
+        padding-bottom: 5%;
         padding-top: 5%;
         width: 60%;
     }
@@ -197,15 +203,17 @@ p {
     .card-container {
         width: 100%;
         padding-bottom: 2%;
+        padding-top: 0;
+        box-sizing: border-box;
+
     }
 
     .card {
-        font: Bold 2em/1.5em Helvetica;
+        font: Bold 2.25rem Helvetica;
     }
 
     .background-picture {
         background-image: url(/assets/images/tablet_background.png);
-        height: 40rem;
         background-size: cover;
         background-position: center;
     }
@@ -214,9 +222,11 @@ p {
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
 }
 
 @media screen and (max-width:700px) {
+
     .green-trees-initiative {
         width: 50%;
     }
@@ -248,14 +258,13 @@ p {
     }
 
     .stop-climate {
-        padding-bottom: 10%;
+        padding-bottom: 5%;
         padding-top: 5%;
         width: 80%;
     }
 
     .background-picture {
         background-image: url(/assets/images/mobile_background.png);
-        height: 40rem;
         background-size: cover;
         background-position: center;
     }
@@ -269,7 +278,20 @@ p {
     }
 
     .card {
-        font: Bold 1.5em/1.5em Helvetica;
+        font: Bold 1.375rem Helvetica;
+        text-align: center;
     }
-
+    .postion-take-action{
+        left: 40%;
+    }
+    .card-container{
+        padding-right: 7%;
+        padding-left: 7%;
+    }
+    .card-link{
+        text-align: center;
+    }
+    .postion-the-issue{
+        left:35%;
+    }
 }
