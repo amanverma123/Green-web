@@ -17,9 +17,9 @@
     top: -1rem;
 }
 .postion-take-action{
-    position: absolute;
+    position: relative;
     top: -1rem;
-    left:45%
+    margin: 0 auto;
 }
 
 
@@ -281,9 +281,6 @@
         font: Bold 1.375rem Helvetica;
         text-align: center;
     }
-    .postion-take-action{
-        left: 40%;
-    }
     .card-container{
         padding-right: 7%;
         padding-left: 7%;
@@ -292,6 +289,8 @@
         text-align: center;
     }
     .postion-the-issue{
-        left:35%;
+        left:0;
+        right:0;
+        margin: auto;
     }
 }
