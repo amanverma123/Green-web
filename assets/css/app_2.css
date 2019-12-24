@@ -129,6 +129,8 @@ html,body
     .image {
         max-width: fit-content;
         order: -1;
+        top:-1rem;
+        left:1rem;
     }
 
     .card-wrapper {
